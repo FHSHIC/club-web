@@ -6,40 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="w-screen">
-    <header class="w-full lg:h-[100px]">
-      <div
-        class="fixed z-[90] flex h-[40px] w-full flex-row items-center bg-[#FDFDFD] lg:hidden"
-      >
-        <div id="bb" class="z-[98] ml-4 w-1/12">
+  <body class="w-screen bg-amber-200">
+    <header class="z-[84] h-[50px] w-full lg:h-[100px]">
+      <div class="fixed flex h-[50px] w-full flex-row items-center lg:hidden">
+        <div id="bb" class="ml-5 w-[22px]">
           <img src="./img/burger.png" />
         </div>
-        
+        <p class="ml-5 text-[20px] text-white lg:hidden">資訊傳播社</p>
       </div>
       <div
         id="burger"
-        class="z-[83] w-full -translate-y-72 text-center duration-500 lg:translate-y-0 lg:justify-center lg:fixed"
+        class="w-full -translate-y-72 text-center duration-500 lg:fixed lg:translate-y-0 lg:justify-center"
       >
-      <div class="-ml-4 w-full text-center text-[12px] font-semibold">
-        <img src="./img/logo.png" alt="" class="">
-      </div>
+        <div
+          class="absolute ml-0 mr-[10px] hidden w-[50px] lg:mr-0 lg:ml-[30px] lg:block lg:w-[100px]"
+        >
+          <img src="./img/logo.png" alt="" class="" />
+        </div>
+        <div
+          class="absolute ml-0 mr-[10px] hidden h-[50px] w-[70px] items-center lg:mr-0 lg:ml-[150px] lg:flex lg:h-[100px] lg:w-[154px]"
+        >
+          <img src="./img/fhic.PNG" alt="" class="" />
+        </div>
         <ul
-          class="space-y-2 divide-y-2 divide-[rgb(168,168,168)] py-2 px-3 font-medium text-[#ffffff] lg:inline-flex lg:float-right lg:p-[32px] lg:space-y-0 lg:divide-y-0 lg:space-x-5 lg:text-3xl lg:font-medium"
+          class="space-y-3 divide-y-2 divide-[rgb(168,168,168)] bg-white py-2 px-3 font-medium text-[#ffffff] lg:float-right lg:inline-flex lg:space-y-0 lg:space-x-5 lg:divide-y-0 lg:bg-inherit lg:p-[32px] lg:text-3xl lg:font-medium"
         >
           <li class="">
-            <a href="#intro" id="list-a">關於資傳</a>
+            <a href="#AboutUs" id="list-a">關於資傳</a>
           </li>
           <li class="">
-            <a href="#subjectCharacter" id="list-b">行銷組</a>
+            <a href="#Marketing" id="list-b">行銷組</a>
           </li>
           <li class="">
-            <a href="#toYouth" id="list-c">技術組</a>
+            <a href="#Technical" id="list-c">技術組</a>
           </li>
           <li class="">
-            <a href="#directorWord" id="list-d">指導老師</a>
+            <a href="#Teacher" id="list-d">指導老師</a>
           </li>
           <li class="">
-            <a href="#e" id="list-e">聯絡我們</a>
+            <a href="#ContactUs" id="list-e">聯絡我們</a>
           </li>
         </ul>
       </div>
