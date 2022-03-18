@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li:hover{
+    text-shadow: 0 0 10px #ffffff,0 0 30px #ffffff,0 0 50px #ffffff,0 0 70px #ffffff;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 16.51%, rgba(0, 0, 0, 0.7) 31.17%, #000000 60.87%);
+}
+
+@media (min-width: 1024px){
+    header{
+    background: linear-gradient(90deg, #000000 4.41%, rgba(0, 0, 0, 0.7) 79.24%, rgba(0, 0, 0, 0.5) 95.35%);
+    }
+}
