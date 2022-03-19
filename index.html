@@ -6,49 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="w-screen bg-amber-200">
-    <header class="z-[84] h-[50px] w-full lg:h-[100px]">
-      <div class="fixed flex h-[50px] w-full flex-row items-center lg:hidden">
-        <div id="bb" class="ml-5 w-[22px]">
-          <img src="./img/burger.png" />
+  <body class="w-screen overflow-x-hidden bg-amber-200">
+    <div class="fixed top-0 z-[49] h-[50px] w-full bg-white lg:h-[100px]"></div>
+    <header id="header" class="sticky top-0 z-50 h-[50px] w-full lg:h-[100px]">
+      <!-- 裝飾物 -->
+      <div id="nav" class="flex h-[50px] items-center lg:h-[100px]">
+        <!-- burger -->
+        <div class="absolute left-[20px] w-[22px] lg:hidden">
+          <img id="bb" src="./img/burger.png" />
         </div>
-        <p class="ml-5 text-[20px] text-white lg:hidden">資訊傳播社</p>
-      </div>
-      <div
-        id="burger"
-        class="w-full -translate-y-72 text-center duration-500 lg:fixed lg:translate-y-0 lg:justify-center"
-      >
+        <!-- word -->
+        <p
+          id="word"
+          class="absolute left-[60px] text-[20px] font-semibold text-white lg:hidden"
+        >
+          資訊傳播社
+        </p>
+        <!-- logo -->
+        <div class="absolute right-[10px] w-[50px] lg:left-[30px] lg:w-[100px]">
+          <img id="logo" src="./img/logo.png" alt="" class="" />
+        </div>
+        <!-- glow fhic -->
         <div
-          class="absolute ml-0 mr-[10px] hidden w-[50px] lg:mr-0 lg:ml-[30px] lg:block lg:w-[100px]"
+          class="absolute right-[80px] w-[70px] lg:left-[150px] lg:w-[154px]"
         >
-          <img src="./img/logo.png" alt="" class="" />
+          <img id="fhic" src="./img/fhic.PNG" alt="" class="" />
         </div>
-        <div
-          class="absolute ml-0 mr-[10px] hidden h-[50px] w-[70px] items-center lg:mr-0 lg:ml-[150px] lg:flex lg:h-[100px] lg:w-[154px]"
-        >
-          <img src="./img/fhic.PNG" alt="" class="" />
-        </div>
-        <ul
-          class="space-y-3 divide-y-2 divide-[rgb(168,168,168)] bg-white py-2 px-3 font-medium text-[#ffffff] lg:float-right lg:inline-flex lg:space-y-0 lg:space-x-5 lg:divide-y-0 lg:bg-inherit lg:p-[32px] lg:text-3xl lg:font-medium"
-        >
-          <li class="">
-            <a href="#AboutUs" id="list-a">關於資傳</a>
-          </li>
-          <li class="">
-            <a href="#Marketing" id="list-b">行銷組</a>
-          </li>
-          <li class="">
-            <a href="#Technical" id="list-c">技術組</a>
-          </li>
-          <li class="">
-            <a href="#Teacher" id="list-d">指導老師</a>
-          </li>
-          <li class="">
-            <a href="#ContactUs" id="list-e">聯絡我們</a>
-          </li>
-        </ul>
       </div>
     </header>
+    <!-- 選單 -->
+    <div
+      id="burger"
+      class="fixed -top-[200px] z-40 h-[50px] w-full text-center duration-500 lg:top-0 lg:z-[55] lg:h-[100px] lg:justify-center lg:duration-[0ms]"
+    >
+      <ul
+        class="flex flex-col divide-y-2 divide-[rgb(168,168,168)] rounded-b-2xl bg-[#C4C4C4] text-[20px] font-medium text-[#000000] lg:float-right lg:inline-flex lg:flex-row lg:space-y-0 lg:space-x-5 lg:divide-y-0 lg:bg-inherit lg:p-[32px] lg:text-3xl lg:font-medium lg:text-white"
+      >
+        <li class="flex h-[50px] items-center justify-center lg:h-[36px]">
+          <a href="#About" id="list-a">關於資傳</a>
+        </li>
+        <li class="flex h-[50px] items-center justify-center lg:h-[36px]">
+          <a href="#Marketing" id="list-b">行銷組</a>
+        </li>
+        <li class="flex h-[50px] items-center justify-center lg:h-[36px]">
+          <a href="#Technical" id="list-c">技術組</a>
+        </li>
+        <li class="flex h-[50px] items-center justify-center lg:h-[36px]">
+          <a href="#Teacher" id="list-d">指導老師</a>
+        </li>
+        <li class="flex h-[50px] items-center justify-center lg:h-[36px]">
+          <a href="#Contact" id="list-e">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+    <section class="p-10 text-2xl">
+      透過逆向歸納，得以用最佳的策略去分析幹。盧梭告訴我們，生活得最有意義的人，並不就是年歲活得最長的人，而是對生活最有感受的人。但願各位能從這段話中獲得心靈上的滋長。伏爾泰深信，在理想的最美好世界中，一切都是為最美好的目的而設。希望大家能發現話中之話。總而言之，劉向相信，天將與之，必先苦之;
+      天將毀之，必先累之。這句話反映了問題的急切性。幹的出現，必將帶領人類走向更高的巔峰。
+      歐陽修說過，月上柳梢頭，人約黃昏後。帶著這句話，我們還要更加慎重的審視這個問題。卡耐基在過去曾經講過，一個不注意小事情的人，永遠不會成功大事業。這不禁令我深思。對我個人而言，幹不僅僅是一個重大的事件，還可能會改變我的人生。如果此時我們選擇忽略幹，那後果可想而知。若發現問題比我們想像的還要深奧，那肯定不簡單。話雖如此，我們卻也不能夠這麼篤定。土其耳說過一句富有哲理的話，今日之蛋，勝於明日之雞。請諸位將這段話在心中默念三遍。莎士比亞講過一段耐人尋思的話，人的一生是短的，但如果卑劣地過這一生，就太長了。我希望諸位也能好好地體會這句話。不要先入為主覺得幹很複雜，實際上，幹可能比你想的還要更複雜。我們不妨可以這樣來想：
+      科恩曾說過，人生不是自發的自我發展，而是一長串機緣。事件和決定，這些機緣、事件和決定在它們實現的當時是取決於我們的意志的。這讓我對於看待這個問題的方法有了巨大的改變。我認為，我們一般認為，抓住了問題的關鍵，其他一切則會迎刃而解。儘管如此，別人往往卻不這麼想。既然，做好幹這件事，可以說已經成為了全民運動。在人類的歷史中，我們總是盡了一切努力想搞懂幹。巴爾扎克曾提出，行業儘管不同，天才的品德並無分別。這句話改變了我的人生。謹慎地來說，我們必須考慮到所有可能。若沒有幹的存在，那麼後果可想而知。我們要學會站在別人的角度思考。若到今天結束時我們都還無法釐清幹的意義，那想必我們昨天也無法釐清。幹因何而發生？而這些並不是完全重要，更加重要的問題是，林慎思相信，治外物易，治已身難。這不禁令我深思。周恩來曾說過一句意義深遠的話，每一個人要有做一代豪傑的雄心壯志！應當做個開創一代的人。這段話非常有意思。
+    </section>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
