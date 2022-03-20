@@ -6,7 +6,7 @@
   font-family: Roboto;
 }
 
-header {
+#header {
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.5) 16.51%,
@@ -20,7 +20,7 @@ header {
 }
 
 @media (min-width: 1024px) {
-  header {
+  #header {
     background: linear-gradient(
       90deg,
       #000000 4.41%,
@@ -33,7 +33,7 @@ header {
     transform: translateY(0);
   }
 
-  ul li:hover {
+  #burger ul li:hover {
     text-shadow: 0 0 10px #ffffff, 0 0 30px #ffffff, 0 0 50px #ffffff;
   }
 }
