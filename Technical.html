@@ -9,26 +9,24 @@
   <body class="w-screen overflow-x-hidden bg-[#0B0B0B]">
     <div id="navbar">
       <div id="header" class="fixed top-0 z-50 h-[50px] w-full lg:h-[80px]">
-        <!-- 裝飾物 -->
         <div id="nav" class="flex h-[50px] items-center lg:h-[80px]">
-          <!-- burger -->
           <div class="absolute left-[20px] w-[22px] lg:hidden">
             <img id="bb" src="./img/burger.png" />
           </div>
-          <!-- word -->
+
           <p
             id="word"
             class="absolute left-[60px] text-[20px] font-semibold text-white lg:hidden"
           >
             資訊傳播社
           </p>
-          <!-- logo -->
+
           <div
             class="absolute right-[10px] w-[50px] lg:left-[30px] lg:w-[80px]"
           >
             <img id="logo" src="./img/logo.png" alt="" class="" />
           </div>
-          <!-- glow fhic -->
+
           <div
             class="absolute right-[80px] w-[70px] lg:left-[120px] lg:w-[120px]"
           >
@@ -36,7 +34,7 @@
           </div>
         </div>
       </div>
-      <!-- 選單 -->
+
       <div
         id="burger"
         class="fixed -top-[200px] z-40 h-[50px] w-full text-center duration-500 lg:top-0 lg:z-[55] lg:h-[80px] lg:justify-center lg:duration-[0ms]"
@@ -83,11 +81,76 @@
     >
       Member
     </section>
-    <section
-      id="Gallery"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      <a href="./TechnicalGallery.html" class="hover:text-[#3b3b3b]">Gallery</a>
+    <section id="Gallery" class="flex w-full flex-col bg-[#0b0b0b]">
+      <div class="mb-[12px] flex justify-center lg:mb-[95px] lg:mt-[38px]">
+        <div class="w-[186px] lg:w-[466px]">
+          <img src="./img/galleryTitle.png" alt="" />
+        </div>
+      </div>
+      <!-- 作品集表格 -->
+      <div
+        class="mb-[60px] grid h-full w-full grid-flow-row grid-cols-1 justify-items-center gap-y-[32px] lg:mb-[100px] lg:grid-cols-2 lg:gap-y-[105px]"
+      >
+        <a href="./TechnicalGallery.html">
+          <div
+            class="h-[220px] w-[250px] rounded-2xl border-4 border-[#f6eb06] bg-[#222228] lg:h-[450px] lg:w-[500px]"
+          >
+            <div class="">
+              <img src="./img/galleryPhoto.png" alt="" />
+            </div>
+            <div
+              class="flex h-[70px] flex-col items-center justify-center text-center text-white lg:h-[150px] lg:gap-y-2"
+            >
+              <p class="text-lg lg:text-4xl">與高中生有約</p>
+              <p class="text-sm lg:text-3xl">如何在探索中揮灑自己的力量</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="h-[220px] w-[250px] rounded-2xl border-4 border-[#f6eb06] bg-[#222228] lg:h-[450px] lg:w-[500px]"
+          >
+            <div class="">
+              <img src="./img/galleryPhoto.png" alt="" />
+            </div>
+            <div
+              class="flex h-[70px] flex-col items-center justify-center text-center text-white lg:h-[150px] lg:gap-y-2"
+            >
+              <p class="text-lg lg:text-[40px]">資訊傳播社社團網站</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="h-[220px] w-[250px] rounded-2xl border-4 border-[#f6eb06] bg-[#222228] lg:h-[450px] lg:w-[500px]"
+          >
+            <div class="">
+              <img src="./img/galleryPhoto.png" alt="" />
+            </div>
+            <div
+              class="flex h-[70px] flex-col items-center justify-center text-center text-white lg:h-[150px] lg:gap-y-2"
+            >
+              <p class="text-lg lg:text-4xl">標題</p>
+              <p class="text-sm lg:text-3xl">無用的連結</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div
+            class="h-[220px] w-[250px] rounded-2xl border-4 border-[#f6eb06] bg-[#222228] lg:h-[450px] lg:w-[500px]"
+          >
+            <div class="">
+              <img src="./img/galleryPhoto.png" alt="" />
+            </div>
+            <div
+              class="flex h-[70px] flex-col items-center justify-center text-center text-white lg:h-[150px] lg:gap-y-2"
+            >
+              <p class="text-lg lg:text-4xl">標題</p>
+              <p class="text-sm lg:text-3xl">無用的連結</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
     <script type="module" src="./src/main.js"></script>
   </body>
