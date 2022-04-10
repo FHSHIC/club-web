@@ -40,7 +40,15 @@
   #Gallery a {
     border-radius: 1rem;
   }
+
   #Gallery a:hover {
     box-shadow: 0 0 20px #f6eb06;
   }
+  #Gallery a:hover:nth-child(2) {
+    box-shadow: 0 0 20px #FA4EE6;
+  }
+  #Gallery a:hover:nth-child(3) {
+    box-shadow: 0 0 20px #41CFF0;
+  }
+  /* border-color:yellow>pink>blue */
 }
