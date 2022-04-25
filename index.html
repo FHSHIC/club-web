@@ -5,10 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="./img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>復興高中 資訊傳播社</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
-  <body class="relative w-screen overflow-x-hidden bg-[#0B0B0B]">
+  <body class="relative w-screen overflow-x-hidden bg-[hsl(0,0%,4%)]">
     <div id="navbar" class="sticky top-0 z-[100]">
-      <div id="header" class="top-0 z-50 h-[50px] w-full lg:h-[80px]">
+      <div id="header" class="top-0 z-[102] h-[50px] w-full lg:h-[80px]">
         <div id="nav" class="flex h-[50px] items-center lg:h-[80px]">
           <!-- burger -->
           <div class="absolute left-[20px] w-[22px] lg:hidden">
@@ -38,7 +42,7 @@
 
       <div
         id="burger"
-        class="fixed -top-[200px] z-40 h-[50px] w-full text-center duration-500 lg:top-0 lg:z-[55] lg:h-[80px] lg:justify-center lg:duration-[0ms]"
+        class="fixed -top-[250px] z-[101] h-[50px] w-full text-center duration-500 lg:top-0 lg:z-[103] lg:h-[80px] lg:justify-center lg:duration-[0ms]"
       >
         <ul
           class="flex flex-col divide-y-2 divide-[#303030] rounded-b-2xl bg-[#222222] text-[20px] font-medium text-white lg:float-right lg:inline-flex lg:flex-row lg:space-y-0 lg:space-x-5 lg:divide-y-0 lg:bg-inherit lg:p-[32px] lg:text-[25px] lg:font-medium"
@@ -77,36 +81,282 @@
       </div>
     </div>
 
-    <section
-      id="About"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      About
+    <!-- 封面 -->
+    <section>
+      <div class="relative w-full">
+        <div
+          class="absolute z-10 h-[200px] w-full bg-black/30 px-[45px] pt-[120px] text-center lg:h-[960px] lg:pt-[610px]"
+        >
+          <p class="text-[24px] text-white lg:text-[5vw]">
+            復興高中 資訊傳播社
+          </p>
+          <hr class="border-[1px] bg-white text-white" />
+          <p class="text-[14px] text-white lg:text-[3vw]">
+            透過影音網路 將資訊傳播給更多人
+          </p>
+        </div>
+        <section class="swiper mySwiper z-0">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide flex h-[200px] w-full items-center justify-center overflow-hidden lg:h-[960px]"
+            >
+              <img src="./img/principal.jpg" alt="" class="w-full" />
+            </div>
+            <div
+              class="swiper-slide flex h-[200px] w-full items-center justify-center overflow-hidden lg:h-[960px]"
+            >
+              <img src="./img/principal2.jpg" alt="" class="w-full" />
+            </div>
+            <div
+              class="swiper-slide flex h-[200px] w-full items-center justify-center overflow-hidden lg:h-[960px]"
+            >
+              <img src="./img/principal3.jpg" alt="" class="w-full" />
+            </div>
+            <div
+              class="swiper-slide flex h-[200px] w-full items-center justify-center overflow-hidden lg:h-[960px]"
+            >
+              <img src="./img/principal4.jpg" alt="" class="w-full" />
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
-    <section
-      id="Marketing"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      <a href="./Marketing.html" class="hover:text-[#3b3b3b]">Marketing</a>
+    <!-- 簡介 -->
+    <section id="About">
+      <div
+        class="flex flex-col items-center justify-center bg-[#0B0B0B] p-[30px] lg:flex-row lg:justify-center lg:pt-[160px] lg:pb-[140px]"
+      >
+        <div class="h-[160px] w-[160px] p-[10px] lg:h-[300px] lg:w-[300px]">
+          <img src="./img/club.JPG" alt="" class="" />
+        </div>
+        <div
+          class="relative mt-5 w-[260px] bg-[#222222] px-[7px] pt-[20px] pb-[14px] lg:mt-0 lg:h-[300px] lg:w-[600px] lg:px-[50px] lg:pt-[60px] lg:pb-[160px]"
+        >
+          <div class="absolute -top-3.5 lg:-top-9">
+            <span class="text-[20px] text-white lg:text-[40px]"
+              >關 於 資 傳 / About FHIC</span
+            >
+          </div>
+          <div class="">
+            <p class="text-[14px] text-white lg:text-[20px]">
+              愛因斯坦曾說過一句意義深遠的話，你要知道科學方法的實質，不要去聽一個科學家對你說些什麼，而要仔細看他在做什麼。這句話讓我們得到了一個全新的觀點去思考這個問題。萊辛講過一段耐人尋思的話，寓言是我們半公開的信仰。我希望諸位也能好好地體會這句話。對你進行深入研究，在現今時代已經無法避免了。
+            </p>
+          </div>
+          <div class="flex w-full justify-end">
+            <a
+              href=""
+              class="h-[25px] w-[100px] rounded-lg bg-[#F6EB06] text-center"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
-    <section
-      id="Technical"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      <a href="./Technical.html" class="hover:text-[#3b3b3b]">Technical</a>
+    <!-- M&T (待修) -->
+    <section>
+      <div
+        class="flex w-full flex-col lg:flex-row lg:justify-evenly lg:bg-inherit"
+      >
+        <div id="Marketing" class="mx-auto h-[440px] w-[320px]">
+          <div
+            class="ml-[30px] mt-[20px] flex h-[400px] w-[260px] rounded-[10px] border-2 border-sky-400 bg-neutral-800 lg:items-center lg:justify-center lg:text-center"
+          >
+            <div
+              class="absolute mx-[20px] mt-[20px] mb-[215px] h-[165px] w-[220px]"
+            >
+              <img src="./img/fhicpic.jpg" alt="fhic" />
+            </div>
+            <div
+              class="mx-[42px] mt-[195px] mb-[182px] h-[23px] w-[178px] text-center text-[20px] font-normal leading-[23px] text-white"
+            >
+              行銷組/Marketing
+            </div>
+            <div
+              class="absolute mx-[30px] mt-[230px] mb-[50px] h-[120] w-[200px] text-[14px] font-normal leading-[16px] text-white"
+            >
+              看看別人，再想想自己，會發現問題的核心其實就在你身旁。這種事實對本人來說意義重大，相信這世界也是有一定意義的。如果仔細思考，你會發現其中蘊含的深遠意義，愛獻(迪?)生曾提出，人生來就具有一定的天賦。
+            </div>
+            <div
+              class="absolute mx-[80px] mt-[360px] mb-[15px] h-[25px] w-[100px] rounded-[10px] bg-[#f6eb06]"
+            >
+              <a href="./Marketing.html" class="">
+                <div
+                  class="absolute left-[15px] top-[5px] h-[16px] w-[71px] text-center font-serif text-[13px] font-normal leading-[16px] text-black"
+                >
+                  Learn More
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Technical" class="mx-auto h-[440px] w-[320px]">
+          <div
+            class="ml-[30px] mt-[20px] flex h-[400px] w-[260px] rounded-[10px] border-2 border-sky-400 bg-neutral-800 lg:items-center lg:justify-center lg:text-center"
+          >
+            <div
+              class="absolute mx-[20px] mt-[20px] mb-[215px] h-[165px] w-[220px]"
+            >
+              <img src="./img/fhicpic.jpg" alt="fhic" />
+            </div>
+            <div
+              class="mx-[42px] mt-[195px] mb-[182px] h-[23px] w-[178px] text-center text-[20px] font-normal leading-[23px] text-white"
+            >
+              技術組/Technical
+            </div>
+            <div
+              class="absolute mx-[30px] mt-[230px] mb-[50px] h-[120] w-[200px] text-[14px] font-normal leading-[16px] text-white"
+            >
+              看看別人，再想想自己，會發現問題的核心其實就在你身旁。這種事實對本人來說意義重大，相信這世界也是有一定意義的。如果仔細思考，你會發現其中蘊含的深遠意義，愛獻(迪?)生曾提出，人生來就具有一定的天賦。
+            </div>
+            <div
+              class="absolute mx-[80px] mt-[360px] mb-[15px] h-[25px] w-[100px] rounded-[10px] bg-[#f6eb06]"
+            >
+              <a href="./Technical.html" class="">
+                <div
+                  class="absolute left-[15px] top-[5px] h-[16px] w-[71px] text-center font-serif text-[13px] font-normal leading-[16px] text-black"
+                >
+                  Learn More
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section
-      id="Teacher"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      Teacher
+    <!-- 老師 -->
+    <section id="Teacher">
+      <div
+        class="flex h-auto w-full justify-center bg-[#0B0B0B] px-[25px] py-[30px] lg:px-[75px] lg:py-[108px]"
+      >
+        <div
+          class="flex w-[270px] flex-col rounded-[10px] border-[2px] border-solid border-[#FA4EE6] bg-[#222222] lg:h-auto lg:w-[85vw] lg:flex-row lg:justify-between lg:space-x-5 lg:border-[5px]"
+        >
+          <div class="p-[20px] lg:w-[50vw] lg:pl-[80px] lg:pt-[80px]">
+            <span class="text-center lg:text-left">
+              <p class="text-[18px] text-[#FFFFFF] lg:text-[4vw]">
+                指導老師 / Teacher
+              </p>
+              <p class="text-[9px] text-[#8D8D8D] lg:text-[2vw]">
+                全校公認最機車的老師
+              </p>
+            </span>
+            <span class="text-[#FFFFFF]">
+              <p class="text-[20px] lg:text-[4.5vw]">陳晉</p>
+              <p class="text-[12px] lg:text-[2vw]">
+                現在，正視你的問題，是非常非常重要的。
+                因為，問題的關鍵看似不明確，但想必在諸位心中已有了明確的答案。
+                德納姆曾經提過，我們決不可被盲目所左右，每個人都有他自己的見地。
+                這不禁令我深思。經過上述討論，荀況曾說過，賢能不待次而舉。這段話雖短，卻足以改變人類的歷史。
+              </p>
+            </span>
+          </div>
+          <div class="h-auto w-[266px] rounded-[10px] lg:w-[478px]">
+            <img src="./img/teacher.png" alt="" class="h-full" />
+          </div>
+        </div>
+      </div>
     </section>
-    <section
-      id="Contact"
-      class="flex h-screen w-full items-center justify-center text-[15vw] opacity-50"
-    >
-      Contact
+    <!-- 聯絡 -->
+    <section id="Contact">
+      <div class="bg-[#0B0B0B] lg:grid lg:grid-cols-2 lg:px-[8.5vw]">
+        <div class="">
+          <div
+            class="py-[3vw] text-center text-[6vw] text-white lg:py-12 lg:text-left lg:text-[3.5vw]"
+          >
+            聯 絡 我 們 / Contact Us
+          </div>
+          <div
+            class="space-y-3 px-[12.5vw] text-[5vw] text-white lg:pr-0 lg:pl-0 lg:text-[2.8vw]"
+          >
+            <div class="flex items-center hover:text-[rgba(111,111,111,0.8)]">
+              <img
+                src="./img/IMG_3166.PNG"
+                class="h-[9vw] lg:h-[4vw]"
+                alt="comment"
+              />
+              <a href="" class="pl-[2vw]" target="_blank">匿名留言板</a>
+              <!-- 目前是空的 -->
+            </div>
+            <div class="flex items-center hover:text-[rgba(111,111,111,0.8)]">
+              <img
+                src="./img/IMG_3167.PNG"
+                class="h-[9vw] lg:h-[4vw]"
+                alt="YT"
+              />
+              <a
+                href="https://youtube.com/channel/UCLhnVcRA89HxoDlGk6IVk9g"
+                class="pl-[2vw]"
+                target="_blank"
+                >FHIC復興資傳</a
+              >
+            </div>
+            <div class="flex items-center hover:text-[rgba(111,111,111,0.8)]">
+              <img
+                src="./img/IMG_3168.PNG"
+                class="h-[9vw] lg:h-[4vw]"
+                alt="IG"
+              />
+              <a
+                href="https://www.instagram.com/fhic_2nd/"
+                class="pl-[2vw]"
+                target="_blank"
+                >復興資訊傳播社第貳屆 (@fhic_2nd)</a
+              >
+            </div>
+            <div class="flex items-center hover:text-[rgba(111,111,111,0.8)]">
+              <img
+                src="./img/IMG_3165.PNG"
+                class="h-[9vw] lg:h-[4vw]"
+                alt="GMAIL"
+              />
+              <a
+                href="mailto:fhshmarketing @gmail.com"
+                class="pl-[2vw]"
+                target="_blank"
+                >fhshmarketing@gmail.com</a
+              >
+            </div>
+            <div
+              class="flex items-center hover:text-[rgba(111,111,111,0.8)] lg:pb-12"
+            >
+              <img
+                src="./img/IMG_3163.PNG"
+                class="h-[9vw] lg:h-[4vw]"
+                alt="MAP"
+              />
+              <a
+                href="https://goo.gl/maps/sZvhRLDfVVDifTqN6"
+                class="pl-[2vw]"
+                target="_blank"
+                >台北市北投區復興四路70號</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative flex justify-center p-[7.5vw] pb-[56.25%] lg:items-center lg:p-2"
+        >
+          <iframe
+            class="absolute h-[80%] w-[75%] lg:h-full lg:w-full lg:py-[10vw] lg:pl-[5vw]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.783306331685!2d121.49999696500839!3d25.143015883921407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae489abd4d87%3A0x4c654f929ad67cd3!2z6Ie65YyX5biC56uL5b6p6IiI6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1647508772709!5m2!1szh-TW!2stw"
+            loading="lazy..."
+          ></iframe>
+        </div>
+      </div>
     </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
