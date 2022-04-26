@@ -1,13 +1,11 @@
 module.exports = {
-  content: ["./index.html",
-    "./Technical.html",
-    "./TechnicalGallery.html",
-    "./TechnicalGallery-fhicClub.html",
-    "./TechnicalGallery-meetStudent.html",
-    "./Marketing.html",
-    "./MarketingGallery-aboutUs.html",
-    "./MarketingGallery-dream.html",
-    "./MarketingGallery-meetStudent.html",
+  content: ["index.html",
+    "./Marketing/index.html",
+    "./Marketing/**/*.{html,js}",
+
+    "./Technical/index.html",
+    "./Technical/**/*.{html,js}",
+
     "./src/**/*.{vue,js,vs,jsx,vsx}"
   ],
   theme: {
