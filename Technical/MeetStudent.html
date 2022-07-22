@@ -7,7 +7,7 @@
     <title>資訊傳播社 作品集</title>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
   </head>
   <body class="relative w-screen overflow-x-hidden bg-[#0B0B0B]">
@@ -86,14 +86,15 @@
         <div
           class="absolute bottom-[11vw] right-[2vw] z-[2] h-[2px] w-[24.3vw] rotate-[-40deg] bg-[#3CC1FE] lg:h-[5px]"
         ></div>
-        <div
-          class="z-[1] flex h-[13.9vw] w-[80vw] flex-col justify-center bg-[#222222]/50"
-        >
-          <p class="text-center text-[5vw] text-white">尋夢計畫紀錄片</p>
+        <div class="z-[1] h-[13.9vw] w-[80vw] bg-[#222222]/50">
+          <p class="text-center text-[5vw] text-white">與高中生有約</p>
+          <p class="-mt-[1.1vw] text-center text-[4.4vw] text-white">
+            如何在探索中揮灑自己的力量
+          </p>
         </div>
       </div>
       <div class="w-full overflow-y-clip lg:h-[500px]">
-        <img src="/img/dream-bg.png" alt="" />
+        <img src="/img/meetStudent.png" alt="" />
       </div>
     </section>
     <!-- 簡介 -->
@@ -109,7 +110,9 @@
       >
         <div class="w-full lg:w-[50vw]">
           <p class="">
-            在一月中時接到了教務主任的尋夢計畫紀錄片專案，希望我們能推出影片來宣傳尋夢計畫。透過podcast訪談的方式再加上紀錄影片，讓大家能更了解尋夢計畫。
+            此網頁的視覺設計和版面配置是設計與導演密切討論的成品，來來回回差點光榮殉職...<br />
+            <br />
+            再加上製作此網頁的Deadline壓太晚導致每個參與成員最後都要加緊趕工，熬夜寫程式超可憐QAQ
           </p>
         </div>
         <div
@@ -117,9 +120,9 @@
         >
           <p class="text-[15px] lg:text-4xl">
             Start / <br />
-            &emsp;西元2022年02月28日 星期一<br /><br />
+            &emsp;西元2021年11月30日 星期二<br /><br />
             Finsh / <br />
-            &emsp;西元2022年02月28日 星期一
+            &emsp;西元2022年03月01日 星期二
           </p>
         </div>
       </div>
@@ -132,18 +135,27 @@
       <div class="mb-[27px] lg:mb-[76px] lg:scale-75">
         <p class="text-[20px] lg:text-[40px]">作 品 呈 現 / Product</p>
       </div>
-      <div class="mx-auto">
-        <div
-          class="flex h-auto w-[80vw] justify-center overflow-x-hidden lg:scale-75"
+      <div
+        class="mx-auto mb-[10px] flex flex-row items-center gap-x-2 lg:mb-[37px] lg:scale-75"
+      >
+        <div class="w-[50px] lg:w-[100px]">
+          <img src="/img/galleryIcon.png" alt="" />
+        </div>
+        <a
+          class="hover:underline hover:decoration-[#F6EB06]"
+          href="https://meet-students.fhsh.tp.edu.tw/"
+          target="_blank"
         >
+          <p class="text-[15px] lg:text-5xl">
+            https://meet-students.fhsh.tp.edu.tw/
+          </p>
+        </a>
+      </div>
+      <div class="mx-auto">
+        <div class="h-[300px] w-[80vw] min-w-[270px]">
           <iframe
-            width="642"
-            height="361"
-            src="https://www.youtube.com/embed/goL1TnVES0M"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            class="h-full w-full"
+            src="https://meet-students.fhsh.tp.edu.tw/"
           ></iframe>
         </div>
       </div>
@@ -295,16 +307,13 @@
         <a href="/index.html" class="">
           <p class="">&lt;- 回到首頁</p>
         </a>
-        <a href="/Marketing/index.html" class="">
+        <a href="/Technical/index.html" class="">
           <p class="">回到上一頁 -></p>
         </a>
       </div>
     </section>
 
-    <script
-      type="module"
-      src="https://unpkg.com/swiper/swiper-bundle.min.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       if (screen.width >= 760) {
         var swiper = new Swiper(".mySwiper", {
